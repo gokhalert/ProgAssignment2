@@ -26,3 +26,18 @@ cacheSolve <- function(x,...) {
 			x$setInverseMat(inverseMat)
 			inverseMat
 		}
+		
+#solution
+
+> x <- matrix(1:4,nrow =2 , ncol = 2)
+> ex1 <- makeCacheMatrix(x)
+> cacheSolve(ex1)
+     [,1] [,2]
+[1,]   -2  1.5
+[2,]    1 -0.5
+> cacheSolve(ex1)
+getting cached data
+     [,1] [,2]
+[1,]   -2  1.5
+[2,]    1 -0.5
+
