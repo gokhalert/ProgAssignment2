@@ -41,3 +41,12 @@ getting cached data
 [1,]   -2  1.5
 [2,]    1 -0.5
 
+> try <- cacheSolve(ex1)
+getting cached data
+> 
+> x %*% try
+     [,1] [,2]
+[1,]    1    0
+[2,]    0    1
+> 
+
